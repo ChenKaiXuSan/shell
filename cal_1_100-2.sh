@@ -1,0 +1,12 @@
+#!/bin/bash
+# Program:
+#	Try do calculate 1+2+3...+${your_input}
+
+read -p "Please input a number, I will count for 1+2+...+your_input:" nu
+
+s=0
+for ((i=1;i<=${nu};i++))
+do
+	s=$((${s}+${i}))
+done
+echo "The result is ${s}"
